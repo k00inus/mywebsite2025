@@ -13,6 +13,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   background-color: #eff0f3;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
 nav {
   display: flex;
   list-style-type: none;
-  color: aqua;
   padding: 12px;
   width: 40vw;
   margin: 0 auto;
@@ -49,8 +49,81 @@ img {
   display: block;
   margin: 2em auto;
 }
+section {
+  margin: 0 auto;
+  width: 50vw;
+  background-color: #2a2a2a;
+  border-bottom: 0.1em solid #ff8e3c;
+  color: #ff8e3c;
+  margin-bottom: 0.5em;
+}
+h4 {
+  margin-top: 0;
+  color: #ff8e3c;
+  padding: 0.51em;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
 
 footer {
   margin-top: 2em;
   text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background: #ff8e3c;
+  color: #0d0d0d;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+  background: #f1f1f1;
+  transition: background 0.3s ease;
 }
